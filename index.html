@@ -4,9 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>JPeat 201 | SBA1</title>
-    <meta name="author" content="Alvaro Trigo Lopez" />
-    <meta name="description" content="fullPage auto-height example." />
-    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="author" content="Alvaro Trigo Lopez, Jordan Peat" />
+    <meta name="description" content="MDDN201 SPA_1 Internet Infrastructure" />
+    <meta name="keywords"  content="mddn, 201, spa1, internet, Infrastructure" />
     <meta name="Resource-type" content="Document" />
 
 
@@ -29,7 +29,7 @@
             $('#fullpage').fullpage({
                 verticalCentered: true,
                 anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#FF6666']
+                sectionsColor: ['#FFFFFF', '#FFE3A1', '#FFDE95', '#FFE3A1']
             });
         });
     </script>
@@ -49,7 +49,6 @@
       .splitRight{
         height:auto;
         width:75%;
-        /*background-color: grey;*/
         float:left;
       }
       .imageBox{
@@ -70,142 +69,153 @@
 </head>
 <body>
   <ul id="menu"><!-- menu items -->
-      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Title</a></li>
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">TOP</a></li>
       <li data-menuanchor="secondPage"><a href="#secondPage">Home Infrastructure</a></li>
       <li data-menuanchor="3rdPage"><a href="#3rdPage">Outdoor Infrastructure</a></li>
-      <!-- <li data-menuanchor="4thPage"><a href="#4thPage">fourth slide</a></li> -->
+      <li data-menuanchor="4thPage"><a href="#4thPage">Data Centers</a></li>
       <!-- add another li element to create a new menu tab -->
   </ul>
 
 <div id="fullpage">
-    <!-- section starts -->
     <div class="section" id="section0">
        <div class="myContent">
           <h1 id="title">MDDN201</h1>
           <h2>INTERNET INFRASTRUCTURE</h2>
         </div>
     </div>
-    <!-- section ends -->
-    <!-- section starts -->
+
+
+
+
+    <!-- *********************************   HOME INFRASTRUCTURE   ************************************ -->
     <div class="section fp-auto-height" id="section2">
         <div class="myContent">
           <h1>Home Infrastructure</h1>
-                    <!-- row starts -->
           <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
+            <div class="splitLeft">
               <div class="imageBox">
-                <!-- img goes here -->
-                <h2>here goes the img</h2><!-- replace with <img src="img/imagename.jpg"> tags -->
+                <img src="img/ethernet.png" height="300px">
               </div>
             </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+            <div class="splitRight">
+              <p>
+                <b>ETHERNET CABLE</b>
+                <p>In order to connect everything, ethernet cables are used for a wired internet connection between devices - often going from a modem/router to the device.
               </p>
-            </div><!-- right section ends -->
+            </div>
           </div>
-          <!-- row ends -->
-          <!-- row starts -->
           <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
+            <div class="splitLeft">
               <div class="imageBox">
-                <!-- img goes here -->
-                <h2>here goes the img</h2><!-- replace with <img src="img/imagename.jpg"> tags -->
+                <img src="img/router.png" height="300px">
               </div>
             </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+            <div class="splitRight">
+              <p>
+                <b>MODEMS & ROUTERS</b>
+                <p>The main hub for the home's internet, this connects up to the main underground internet wire and modulates digital info transmissions to be recieved by the modem wherever the website is based. Routers are an additional hub connected to the modem as an extension for more ethernet plugs.
               </p>
-            </div><!-- right section ends -->
+            </div>
           </div>
-          <!-- row ends -->
+          <div class="row">
+            <div class="splitLeft">
+              <div class="imageBox">
+                <img src="img/extender.png" height="300px">
+              </div>
+            </div>
+            <div class="splitRight">
+              <p>
+                <b>WiFi EXTENDERS</b>
+                <p>Travelling through the copper wires (and sometimes other wires) in the house's power lines, this can be plugged into any power plug socket to extend the wifi signal from the modem. 
+              </p>
+            </div>
+          </div>
         </div>
     </div>
-    <!-- section ends -->
 
-        <!-- section starts -->
-    <div class="section fp-auto-height" id="section2">
+
+
+    <!-- *********************************   CITY INFRASTRUCTURE   ************************************ -->
+    <div class="section fp-auto-height" id="section3">
         <div class="myContent">
-          <h1>Outdoor Infrastructure</h1>
-                    <!-- row starts -->
+          <h1>City Infrastructure</h1>
           <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
+            <div class="splitLeft">
               <div class="imageBox">
-                <img src="img/1.jpg" height="300px">
+                <img src="img/train.png" height="300px">
               </div>
             </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
+            <div class="splitRight">
+              <p>
                 <b>TRAIN SCHEDULE</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+                <p>Providing a live changing screen, these train schedules display upcoming trains constantly updated via the internet through the local wires at the station, most likely getting the info from a data center for Metlink.
               </p>
-            </div><!-- right section ends -->
+            </div>
           </div>
-          <!-- row ends -->
-          <!-- row starts -->
           <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
+            <div class="splitLeft">
               <div class="imageBox">
-                <img src="img/2.jpg" height="300px">
+                <img src="img/wires.png" height="300px">
               </div>
             </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                <b>Antenna</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+            <div class="splitRight">
+              <p>
+                <b>INTERNET WIRES (GRATE)</b>
+                <p>This grate in particular is a Telecom (Spark) grate for access to the internet wire lines that travel beneath the city. Many of these are spread across Wellington, both Telecom and other internet providers.
               </p>
-            </div><!-- right section ends -->
+            </div>
           </div>
-          <!-- row ends -->
-          <!-- row starts -->
           <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
+            <div class="splitLeft">
               <div class="imageBox">
-                <img src="img/3.jpg" height="300px">
+                <img src="img/booth.png" height="300px">
               </div>
             </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                <b>TRAIN SCHEDULE</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
+            <div class="splitRight">
+              <p>
+                <b>WiFi ZONES</b>
+                <p>These are old phone booths remodelled to advertise local free wifi zones, accessable by anyone. These use modems to connect to the aforementioned internet wires.
               </p>
-            </div><!-- right section ends -->
-          </div>
-          <!-- row ends -->
-          <!-- row starts -->
-          <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
-              <div class="imageBox">
-                <img src="img/4.jpg" height="300px">
-              </div>
             </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                <b>TRAIN SCHEDULE</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
-              </p>
-            </div><!-- right section ends -->
           </div>
-          <!-- row ends -->
-          <!-- row starts -->
-          <div class="row">
-            <div class="splitLeft"><!-- left div with 25% -->
-              <div class="imageBox">
-                <img src="img/5.jpg" height="300px">
-              </div>
-            </div>
-            <div class="splitRight"><!-- right div with 75% -->
-              <p><!-- paragraph -->
-                <b>TRAIN SCHEDULE</b>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in arcu eget massa dictum tincidunt. Donec sed feugiat lectus, vitae auctor massa. Donec aliquam porttitor porttitor.
-              </p>
-            </div><!-- right section ends -->
-          </div>
-          <!-- row ends -->
         </div>
     </div>
-    <!-- section ends -->
+
+
+
+
+    <!-- *********************************   DATA CENTRES   ************************************ -->
+    <div class="section fp-auto-height" id="section4">
+        <div class="myContent">
+          <h1>Data Centres</h1>
+          <div class="row">
+            <div class="splitLeft">
+              <div class="imageBox">
+                <img src="img/datacom.png" height="300px">
+              </div>
+            </div>
+            <div class="splitRight">
+              <p>
+                <b>DATACOM</b>
+                <p> One of the two major data centres in Wellington, holding up to 300 racks of servers used for website hosting, domains and traffic. Located 68-86 Jervois Quay.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="splitLeft">
+              <div class="imageBox">
+                <img src="img/xtreme.png" height="300px">
+              </div>
+            </div>
+            <div class="splitRight">
+              <p>
+                <b>XTREME NETWORKS</b>
+                <p>Another major data center, located 191 Thorndon Quay. Their site doesn't specify total racks but provides much more information on their site.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
 
 </div>
 
